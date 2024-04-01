@@ -46,6 +46,7 @@ public class Cachorro {
         this.nome = nome;
     }
 
+    //Faz o cachorro latir
     public void latir(){
         System.out.println(getNome() + " está latindo!");
     }
