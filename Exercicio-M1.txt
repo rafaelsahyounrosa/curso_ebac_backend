@@ -1,0 +1,3 @@
+Podemos dizer como front-end, todo dominio da aplicação que faz contato com o usuário, seja para uma mera "tradução" do que veio do Banckend ou para enviar solicitações. O Backend, faz logicamente o caminho inverso, é o responsável por traduzir o que o usuario solicita através das regras de negocio, regras de acesso e toda a parte de segurança.
+
+Podemos usar o exemplo do ifood, onde somos apresentados diversos restaurantes, cada um com suas opções e preços. Ao escolher algo, essa informação é tratada pela lógica do backend e depois é retornada novamente ao front, só que dessa  vez para o restaurante responsável. E assim esse fluxo é repetido quantas vezes for necessário até que o ciclo do usuário se encerre.
