@@ -1,3 +1,0 @@
-A principal diferença entre elas, é que podemos dizer que o JSP é uma tecnologia server-side enquanto a Angular é client-side, ou seja enquanto um faz a renderização e tem os valores dinamicos direto no servidor (JSP) o outro tem o seu trabalho direto no browser e mais proximo ao usuário, melhorndo algumas experiencias.
-
-Por ser uma tecnologia mais antiga, está mais relacionada à aplicações antigas e monolitos. Enquanto o Angular, mesmo tendo perdido muito espaço recentemente, já segue o padrão de tecnologias mais modernas, que se preocupam com a repartição do código como são feitos nos micro-serviços
