@@ -1,0 +1,10 @@
+INICIO
+	1 - Abrir os olhos
+	2 - Verificar se pode dormir mais
+		1 - Olhar o relogio
+		2 - Fazer conta para ver se é possivel dormir mais
+		3 - Se for possível, dormir mais
+	3 - Remover as cobertas
+	4 - Levantar
+	5 - Colocar os sapatos
+FIM
