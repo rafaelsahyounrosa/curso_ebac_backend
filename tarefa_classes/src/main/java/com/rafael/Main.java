@@ -1,12 +1,17 @@
 package com.rafael;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println(media(20,11,7,3));
-    }
+        Scanner sc = new Scanner(System.in);
 
-    public static double media(double numero1, double numero2, double numero3, double numero4){
-        return (numero1 + numero2 + numero3 + numero4) / 4 ;
+        System.out.print("Entre com a sua idade: ");
+        int age = sc.nextInt();
+
+        Integer ageWrapper = (Integer) age;
+        System.out.println("Sua idade (" + ageWrapper + ") foi convertida para o tipo wrapper " + ageWrapper.getClass().getName());
+
     }
 }
