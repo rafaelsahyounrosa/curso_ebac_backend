@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -39,6 +40,8 @@ public class Main {
         }
 
         sc.close();
+        Collections.sort(homens);
+        Collections.sort(mulheres);
         System.out.println(homens);
         System.out.println(mulheres);
 
