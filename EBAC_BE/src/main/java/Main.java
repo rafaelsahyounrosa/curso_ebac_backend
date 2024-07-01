@@ -1,3 +1,8 @@
+import dao.ClientMapDao;
+import dao.IClienteDao;
+import model.Cliente;
+
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -5,45 +10,101 @@ import java.util.Scanner;
 
 public class Main {
 
+    private static IClienteDao iClienteDAO;
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
-        System.out.println("Digite a quantidade de pessoas que você deseja informar: ");
-        int quantidade = sc.nextInt();
-        sc.nextLine();
+        iClienteDAO = new ClientMapDao();
 
-        List<String> homens = new ArrayList();
-        List<String> mulheres = new ArrayList();
+        String opcao = JOptionPane.showInputDialog(null,
+                "Digite 1 para cadastro, 2 para consultar, 3 para exclusão, 4 para alteração ou 5 para sair",
+                "Cadastro", JOptionPane.INFORMATION_MESSAGE);
 
-        System.out.println("\nInforme as pessoas no seguinte modelo:\nNome - Sexo");
-
-        for (int i = 0; i < quantidade; i++) {
-
-            System.out.println("Informe a pessoa " + (i+1) + ": ");
-
-            String pessoa = sc.nextLine();
-
-            String nome = pessoa.split("-")[0].trim();
-            String sexo = pessoa.split("-")[1].trim();
-
-//            System.out.println(Arrays.toString(pessoa.split("-")));
-//            System.out.println(nome);
-//            System.out.println(sexo);
-
-            if (sexo.equalsIgnoreCase("homem")) {
-                homens.add(nome);
-                System.out.println("Adicionando à lista dos homens");
-            }else if (sexo.equalsIgnoreCase("mulher")) {
-                mulheres.add(nome);
-                System.out.println("Adicionando à lista das mulheres");
+        while (!isOpcaoValida(opcao)) {
+            if ("".equals(opcao)) {
+                sair();
             }
+            opcao = JOptionPane.showInputDialog(null,
+                    "Opção inválida digite 1 para cadastro, 2 para consulta, 3 para cadastro, 4 para alteração ou 5 para sair",
+                    "Green dinner", JOptionPane.INFORMATION_MESSAGE);
         }
 
-        sc.close();
-        Collections.sort(homens);
-        Collections.sort(mulheres);
-        System.out.println(homens);
-        System.out.println(mulheres);
+        while (isOpcaoValida(opcao)) {
+            if (isOpcaoSair(opcao)) {
+                sair();
+            } else if (isCadastro(opcao)) {
+                String dados = JOptionPane.showInputDialog(null,
+                        "Digite os dados do cliente separados por vígula, conforme exemplo: Nome, CPF, Telefone, Endereço, Número, Cidade e Estado",
+                        "Cadastro", JOptionPane.INFORMATION_MESSAGE);
+                cadastrar(dados);
+            } else if(isConsultar(opcao)) {
+                String dados = JOptionPane.showInputDialog(null,
+                        "Digite o cpf",
+                        "Consultar", JOptionPane.INFORMATION_MESSAGE);
+
+                consultar(dados);
+            }
+
+            opcao = JOptionPane.showInputDialog(null,
+                    "Digite 1 para cadastro, 2 para consulta, 3 para cadastro, 4 para alteração ou 5 para sair",
+                    "Green dinner", JOptionPane.INFORMATION_MESSAGE);
+        }
+    }
+
+    private static void consultar(String dados) {
+        Cliente cliente = iClienteDAO.consultar(Long.parseLong(dados));
+        if (cliente != null) {
+            JOptionPane.showMessageDialog(null, "Cliente encontrado: " + cliente.toString(), "Sucesso",JOptionPane.INFORMATION_MESSAGE);
+        } else {
+            JOptionPane.showMessageDialog(null, "Cliente não encontrado: ", "Sucesso",JOptionPane.INFORMATION_MESSAGE);
+        }
 
     }
+
+    private static boolean isConsultar(String opcao) {
+        if ("2".equals(opcao)) {
+            return true;
+        }
+        return false;
+    }
+
+    private static void cadastrar(String dados) {
+        String[] dadosSeparados = dados.split(",");
+        Cliente cliente = new Cliente(dadosSeparados[0],dadosSeparados[1],dadosSeparados[2],dadosSeparados[3],dadosSeparados[4],dadosSeparados[5],dadosSeparados[6]);
+        Boolean isCadastrado = iClienteDAO.cadastrar(cliente);
+        if (isCadastrado) {
+            JOptionPane.showMessageDialog(null, "Cliente cadastrado com sucesso ", "Sucesso",JOptionPane.INFORMATION_MESSAGE);
+        } else {
+            JOptionPane.showMessageDialog(null, "Cliente já se encontra cadastrado", "Erro",JOptionPane.INFORMATION_MESSAGE);
+        }
+    }
+
+    private static boolean isCadastro(String opcao) {
+        if ("1".equals(opcao)) {
+            return true;
+        }
+        return false;
+    }
+
+    private static boolean isOpcaoSair(String opcao) {
+        if ("5".equals(opcao)) {
+            return true;
+        }
+        return false;
+    }
+
+    private static void sair() {
+        JOptionPane.showMessageDialog(null, "Até logo: ", "Sair",JOptionPane.INFORMATION_MESSAGE);
+        System.exit(0);
+    }
+
+    private static boolean isOpcaoValida(String opcao) {
+        if ("1".equals(opcao) || "2".equals(opcao)
+                || "3".equals(opcao) || "4".equals(opcao) || "5".equals(opcao)) {
+            return true;
+        }
+        return false;
+    }
+
 }
+
