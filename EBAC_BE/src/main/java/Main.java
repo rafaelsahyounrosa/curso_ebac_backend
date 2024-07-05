@@ -1,38 +1,37 @@
-import model.app.Application;
-import model.factories.EsportivoFactory;
-import model.factories.ICarFactory;
-import model.factories.UtilitarioFactory;
+import model.Carro;
+import model.CarroCaro;
+import model.CarroSimples;
 
-
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
-    private static Application configureApplication(String categoria) {
-
-        Application application;
-        ICarFactory carFactory;
-
-        switch (categoria.toLowerCase()) {
-            case "esportivo":
-                carFactory = new EsportivoFactory();
-                break;
-            default:
-                carFactory = new UtilitarioFactory();
-        }
-
-        application = new Application(carFactory);
-        return application;
-    }
-
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Por favor, informe se é esportivo ou utilitario: ");
-        String categoria = scanner.nextLine();
-        scanner.close();
-        Application application = configureApplication(categoria);
-        application.preparaCar();
+        List<Carro> carros = new ArrayList<>();
 
+        CarroSimples carroSimples1 = new CarroSimples("Uno");
+        CarroSimples carroSimples2 = new CarroSimples("Kwid");
+
+        CarroCaro carroCaro1 = new CarroCaro("X5");
+        CarroCaro carroCaro2 = new CarroCaro("X6");
+
+
+        carros.add(carroSimples1);
+        carros.add(carroSimples2);
+        carros.add(carroCaro1);
+        carros.add(carroCaro2);
+
+        imprimeLista(carros);
+
+
+    }
+
+    public static void imprimeLista(List<? extends Carro> lista) {
+
+        for (Carro obj : lista) {
+            obj.ligar();
+        }
     }
 }
