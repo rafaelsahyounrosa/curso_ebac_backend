@@ -1,7 +1,10 @@
+import model.Pessoa;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class Main {
 
@@ -12,8 +15,8 @@ public class Main {
         int quantidade = sc.nextInt();
         sc.nextLine();
 
-        List<String> homens = new ArrayList();
-        List<String> mulheres = new ArrayList();
+        List<Pessoa> pessoas = new ArrayList();
+        List<Pessoa> mulheres;
 
         System.out.println("\nInforme as pessoas no seguinte modelo:\nNome - Sexo");
 
@@ -26,24 +29,20 @@ public class Main {
             String nome = pessoa.split("-")[0].trim();
             String sexo = pessoa.split("-")[1].trim();
 
-//            System.out.println(Arrays.toString(pessoa.split("-")));
-//            System.out.println(nome);
-//            System.out.println(sexo);
+            System.out.println("Adiconando pessoa à lista de pessoa...");
+            pessoas.add(new Pessoa(nome, sexo));
 
-            if (sexo.equalsIgnoreCase("homem")) {
-                homens.add(nome);
-                System.out.println("Adicionando à lista dos homens");
-            }else if (sexo.equalsIgnoreCase("mulher")) {
-                mulheres.add(nome);
-                System.out.println("Adicionando à lista das mulheres");
-            }
         }
 
         sc.close();
-        Collections.sort(homens);
-        Collections.sort(mulheres);
-        System.out.println(homens);
-        System.out.println(mulheres);
+
+        mulheres = pessoas.stream()
+                .filter(p -> p.getSexo().equalsIgnoreCase("Mulher"))
+                .collect(Collectors.toList());
+
+        System.out.println("********");
+        System.out.println("Mulheres");
+        mulheres.forEach(System.out::println);
 
     }
 }
