@@ -8,6 +8,8 @@ import java.util.stream.Collectors;
 
 public class Main {
 
+    private static List<Pessoa> mulheres;
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -16,7 +18,7 @@ public class Main {
         sc.nextLine();
 
         List<Pessoa> pessoas = new ArrayList();
-        List<Pessoa> mulheres;
+
 
         System.out.println("\nInforme as pessoas no seguinte modelo:\nNome - Sexo");
 
@@ -36,13 +38,18 @@ public class Main {
 
         sc.close();
 
-        mulheres = pessoas.stream()
-                .filter(p -> p.getSexo().equalsIgnoreCase("Mulher"))
-                .collect(Collectors.toList());
+        mulheres = filtraMulheres(pessoas);
 
         System.out.println("********");
         System.out.println("Mulheres");
         mulheres.forEach(System.out::println);
 
+    }
+
+    public static List<Pessoa> filtraMulheres(List<Pessoa> pessoas) {
+
+        return pessoas.stream()
+                .filter(p -> p.getSexo().equalsIgnoreCase("Mulher"))
+                .collect(Collectors.toList());
     }
 }
