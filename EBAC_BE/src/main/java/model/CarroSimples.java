@@ -2,6 +2,7 @@ package model;
 
 import annotations.Tabela;
 
+
 @Tabela(value = "carro_simples")
 public class CarroSimples extends Carro {
 
