@@ -6,10 +6,7 @@ package br.com.rafaelrosa.dao;
 import br.com.rafaelrosa.dao.generic.GenericDAO;
 import br.com.rafaelrosa.domain.Cliente;
 
-/**
- * @author rodrigo.pires
- *
- */
+
 public class ClienteDAO extends GenericDAO<Cliente, Long> implements IClienteDAO {
 
 	public ClienteDAO() {

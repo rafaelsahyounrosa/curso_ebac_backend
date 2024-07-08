@@ -12,11 +12,7 @@ import anotacao.TipoChave;
 import br.com.rafaelrosa.dao.Persistente;
 import br.com.rafaelrosa.exceptions.TipoChaveNaoEncontradaException;
 
-/**
- * @author rodrigo.pires
- *
- * Classe genérica que implementa interface genérica com os métodos de CRUD
- */
+
 public abstract class GenericDAO<T extends Persistente, E extends Serializable> implements IGenericDAO<T,E> {
 
     //protected Map<Class, Map<Long, T>> map = new HashMap<>();

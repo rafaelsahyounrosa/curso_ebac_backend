@@ -12,10 +12,7 @@ import java.util.Set;
 import anotacao.TipoChave;
 import br.com.rafaelrosa.dao.Persistente;
 
-/**
- * @author rodrigo.pires
- *
- */
+
 public class Venda implements Persistente {
 	
 	public enum Status {

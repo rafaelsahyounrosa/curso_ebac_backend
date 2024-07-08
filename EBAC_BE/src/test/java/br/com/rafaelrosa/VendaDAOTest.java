@@ -26,10 +26,7 @@ import br.com.rafaelrosa.domain.Venda;
 import br.com.rafaelrosa.domain.Venda.Status;
 import br.com.rafaelrosa.exceptions.TipoChaveNaoEncontradaException;
 
-/**
- * @author rodrigo.pires
- *
- */
+
 public class VendaDAOTest {
 	
 	private IVendaDAO vendaDao;
@@ -265,7 +262,7 @@ public class VendaDAOTest {
 	private Cliente cadastrarCliente() throws TipoChaveNaoEncontradaException {
 		Cliente cliente = new Cliente();
 		cliente.setCpf(12312312312L);
-		cliente.setNome("Rodrigo");
+		cliente.setNome("Rafael");
 		cliente.setCidade("São Paulo");
 		cliente.setEnd("End");
 		cliente.setEstado("SP");

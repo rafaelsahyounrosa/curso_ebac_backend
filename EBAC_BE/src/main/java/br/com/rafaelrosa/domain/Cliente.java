@@ -6,10 +6,7 @@ package br.com.rafaelrosa.domain;
 import anotacao.TipoChave;
 import br.com.rafaelrosa.dao.Persistente;
 
-/**
- * @author rodrigo.pires
- *
- */
+
 public class Cliente implements Persistente {
 	
 	private String nome;

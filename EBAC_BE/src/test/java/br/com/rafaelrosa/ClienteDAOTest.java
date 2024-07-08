@@ -16,10 +16,7 @@ import br.com.rafaelrosa.dao.IClienteDAO;
 import br.com.rafaelrosa.domain.Cliente;
 import br.com.rafaelrosa.exceptions.TipoChaveNaoEncontradaException;
 
-/**
- * @author rodrigo.pires
- *
- */
+
 public class ClienteDAOTest {
 	
 	private IClienteDAO clienteDao;
@@ -34,7 +31,7 @@ public class ClienteDAOTest {
 	public void init() throws TipoChaveNaoEncontradaException {
 		cliente = new Cliente();
 		cliente.setCpf(12312312312L);
-		cliente.setNome("Rodrigo");
+		cliente.setNome("Rafael");
 		cliente.setCidade("São Paulo");
 		cliente.setEnd("End");
 		cliente.setEstado("SP");
@@ -64,9 +61,9 @@ public class ClienteDAOTest {
 	
 	@Test
 	public void alterarCliente() throws TipoChaveNaoEncontradaException {
-		cliente.setNome("Rodrigo Pires");
+		cliente.setNome("Rafael Rosa");
 		clienteDao.alterar(cliente);
-		Assert.assertEquals("Rodrigo Pires", cliente.getNome());
+		Assert.assertEquals("Rafael Rosa", cliente.getNome());
 	}
 	
 	@Test

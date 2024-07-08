@@ -17,10 +17,7 @@ import br.com.rafaelrosa.dao.ProdutoDAO;
 import br.com.rafaelrosa.domain.Produto;
 import br.com.rafaelrosa.exceptions.TipoChaveNaoEncontradaException;
 
-/**
- * @author rodrigo.pires
- *
- */
+
 public class ProdutoDAOTest {
 	
 	private IProdutoDAO produtoDao;
@@ -61,10 +58,10 @@ public class ProdutoDAOTest {
 	
 	@Test
 	public void alterarCliente() throws TipoChaveNaoEncontradaException {
-		produto.setNome("Rodrigo Pires");
+		produto.setNome("Rafael Rosa");
 		produtoDao.alterar(produto);
 		
-		Assert.assertEquals("Rodrigo Pires", produto.getNome());
+		Assert.assertEquals("Rafael Rosa", produto.getNome());
 	}
 	
 	@Test

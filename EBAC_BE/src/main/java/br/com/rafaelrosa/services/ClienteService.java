@@ -7,10 +7,7 @@ import br.com.rafaelrosa.dao.IClienteDAO;
 import br.com.rafaelrosa.domain.Cliente;
 import br.com.rafaelrosa.services.generic.GenericService;
 
-/**
- * @author rodrigo.pires
- *
- */
+
 public class ClienteService extends GenericService<Cliente, Long> implements IClienteService {
 	
 	//private IClienteDAO clienteDAO;

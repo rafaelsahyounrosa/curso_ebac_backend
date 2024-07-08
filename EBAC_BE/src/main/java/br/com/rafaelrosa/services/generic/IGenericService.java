@@ -9,10 +9,7 @@ import java.util.Collection;
 import br.com.rafaelrosa.dao.Persistente;
 import br.com.rafaelrosa.exceptions.TipoChaveNaoEncontradaException;
 
-/**
- * @author rodrigo.pires
- *
- */
+
 public interface IGenericService <T extends Persistente, E extends Serializable> {
 	
 	/**

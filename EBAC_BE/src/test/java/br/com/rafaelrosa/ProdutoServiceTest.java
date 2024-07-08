@@ -16,10 +16,7 @@ import br.com.rafaelrosa.exceptions.TipoChaveNaoEncontradaException;
 import br.com.rafaelrosa.services.IProdutoService;
 import br.com.rafaelrosa.services.ProdutoService;
 
-/**
- * @author rodrigo.pires
- *
- */
+
 public class ProdutoServiceTest {
 
 	private IProdutoService produtoService;
@@ -59,9 +56,9 @@ public class ProdutoServiceTest {
 	
 	@Test
 	public void alterarCliente() throws TipoChaveNaoEncontradaException {
-		produto.setNome("Rodrigo Pires");
+		produto.setNome("Rafael Rosa");
 		produtoService.alterar(produto);
 		
-		Assert.assertEquals("Rodrigo Pires", produto.getNome());
+		Assert.assertEquals("Rafael Rosa", produto.getNome());
 	}
 }

@@ -10,10 +10,7 @@ import br.com.rafaelrosa.dao.Persistente;
 import br.com.rafaelrosa.dao.generic.IGenericDAO;
 import br.com.rafaelrosa.exceptions.TipoChaveNaoEncontradaException;
 
-/**
- * @author rodrigo.pires
- *
- */
+
 public abstract class GenericService<T extends Persistente, E extends Serializable> 
 	implements IGenericService<T, E> {
 	

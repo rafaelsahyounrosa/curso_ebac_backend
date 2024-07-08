@@ -6,11 +6,7 @@ import br.com.rafaelrosa.exceptions.TipoChaveNaoEncontradaException;
 import java.io.Serializable;
 import java.util.Collection;
 
-/**
- * @author rodrigo.pires
- *
- * Interface genérica para métodos de CRUD(Create, Read, Update and Delete)
- */
+
 public interface IGenericDAO <T extends Persistente, E extends Serializable> {
 
     /**

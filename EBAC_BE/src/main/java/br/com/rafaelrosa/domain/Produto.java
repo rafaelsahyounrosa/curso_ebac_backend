@@ -8,10 +8,7 @@ import java.math.BigDecimal;
 import anotacao.TipoChave;
 import br.com.rafaelrosa.dao.Persistente;
 
-/**
- * @author rodrigo.pires
- *
- */
+
 public class Produto implements Persistente {
 
 	@TipoChave("getCodigo")

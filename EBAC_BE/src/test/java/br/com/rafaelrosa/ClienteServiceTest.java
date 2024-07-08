@@ -14,10 +14,7 @@ import br.com.rafaelrosa.exceptions.TipoChaveNaoEncontradaException;
 import br.com.rafaelrosa.services.ClienteService;
 import br.com.rafaelrosa.services.IClienteService;
 
-/**
- * @author rodrigo.pires
- *
- */
+
 public class ClienteServiceTest {
 	
 	private IClienteService clienteService;
@@ -33,7 +30,7 @@ public class ClienteServiceTest {
 	public void init() {
 		cliente = new Cliente();
 		cliente.setCpf(12312312312L);
-		cliente.setNome("Rodrigo");
+		cliente.setNome("Rafael");
 		cliente.setCidade("São Paulo");
 		cliente.setEnd("End");
 		cliente.setEstado("SP");
@@ -62,9 +59,9 @@ public class ClienteServiceTest {
 	
 	@Test
 	public void alterarCliente() throws TipoChaveNaoEncontradaException {
-		cliente.setNome("Rodrigo Pires");
+		cliente.setNome("Rafael Rosa");
 		clienteService.alterar(cliente);
 		
-		Assert.assertEquals("Rodrigo Pires", cliente.getNome());
+		Assert.assertEquals("Rafael Rosa", cliente.getNome());
 	}
 }
