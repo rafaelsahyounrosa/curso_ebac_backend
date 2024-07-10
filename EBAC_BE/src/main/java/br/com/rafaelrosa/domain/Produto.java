@@ -1,55 +1,41 @@
-/**
- * 
- */
 package br.com.rafaelrosa.domain;
 
-import java.math.BigDecimal;
+public class Produto {
 
-import anotacao.TipoChave;
-import br.com.rafaelrosa.dao.Persistente;
+    private Long id;
+    private String nome;
+    private String codigo;
+    private Double preco;
 
+    public Long getId() {
+        return id;
+    }
 
-public class Produto implements Persistente {
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-	@TipoChave("getCodigo")
-	private String codigo;
-	
-	private String nome;
-	
-	private String descricao;
-	
-	private BigDecimal valor;
+    public String getNome() {
+        return nome;
+    }
 
-	public String getCodigo() {
-		return codigo;
-	}
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
-	public void setCodigo(String codigo) {
-		this.codigo = codigo;
-	}
+    public String getCodigo() {
+        return codigo;
+    }
 
-	public String getNome() {
-		return nome;
-	}
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
 
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+    public Double getPreco() {
+        return preco;
+    }
 
-	public String getDescricao() {
-		return descricao;
-	}
-
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
-	}
-
-	public BigDecimal getValor() {
-		return valor;
-	}
-
-	public void setValor(BigDecimal valor) {
-		this.valor = valor;
-	}
-	
+    public void setPreco(Double preco) {
+        this.preco = preco;
+    }
 }
