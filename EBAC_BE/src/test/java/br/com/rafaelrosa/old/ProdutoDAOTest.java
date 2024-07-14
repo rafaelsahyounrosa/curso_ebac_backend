@@ -1,5 +1,5 @@
 
-package br.com.rafaelrosa;
+package br.com.rafaelrosa.old;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;

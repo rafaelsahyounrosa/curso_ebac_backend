@@ -1,5 +1,5 @@
 
-package br.com.rafaelrosa;
+package br.com.rafaelrosa.old;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;

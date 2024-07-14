@@ -1,5 +1,5 @@
 
-package br.com.rafaelrosa;
+package br.com.rafaelrosa.old;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
