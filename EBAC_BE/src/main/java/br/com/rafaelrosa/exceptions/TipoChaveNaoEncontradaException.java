@@ -1,12 +1,10 @@
 package br.com.rafaelrosa.exceptions;
 
-
 public class TipoChaveNaoEncontradaException extends Exception {
 
-    
-	private static final long serialVersionUID = -1389494676398525746L;
+    private static final long serialVersionUID = -1389494676398525746L;
 
-	public TipoChaveNaoEncontradaException(String msg) {
+    public TipoChaveNaoEncontradaException(String msg) {
         this(msg, null);
     }
 

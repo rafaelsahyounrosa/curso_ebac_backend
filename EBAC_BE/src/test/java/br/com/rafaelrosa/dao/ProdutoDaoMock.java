@@ -1,13 +1,10 @@
-/**
- * 
- */
+
 package br.com.rafaelrosa.dao;
 
 import java.util.Collection;
 
 import br.com.rafaelrosa.domain.Produto;
 import br.com.rafaelrosa.exceptions.TipoChaveNaoEncontradaException;
-
 
 public class ProdutoDaoMock implements IProdutoDAO {
 
@@ -20,13 +17,13 @@ public class ProdutoDaoMock implements IProdutoDAO {
 	@Override
 	public void excluir(String valor) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void alterar(Produto entity) throws TipoChaveNaoEncontradaException {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override

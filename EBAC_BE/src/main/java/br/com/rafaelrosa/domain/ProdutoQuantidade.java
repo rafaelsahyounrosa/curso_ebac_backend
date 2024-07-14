@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package br.com.rafaelrosa.domain;
 
 import java.math.BigDecimal;
@@ -8,22 +6,21 @@ import java.math.BigDecimal;
 import anotacao.ColunaTabela;
 import anotacao.Tabela;
 
-
 @Tabela("TB_PRODUTO_QUANTIDADE")
 public class ProdutoQuantidade {
-	
+
 	@ColunaTabela(dbName = "id", setJavaName = "setId")
 	private Long id;
 
-	//@ColunaTabela(dbName = "id", setJavaName = "setId")
+	// @ColunaTabela(dbName = "id", setJavaName = "setId")
 	private Produto produto;
-	
+
 	@ColunaTabela(dbName = "quantidade", setJavaName = "setQuantidade")
 	private Integer quantidade;
-	
+
 	@ColunaTabela(dbName = "valor_total", setJavaName = "setValorTotal")
 	private BigDecimal valorTotal;
-	
+
 	public ProdutoQuantidade() {
 		this.quantidade = 0;
 		this.valorTotal = BigDecimal.ZERO;
@@ -52,7 +49,6 @@ public class ProdutoQuantidade {
 	public void setValorTotal(BigDecimal valorTotal) {
 		this.valorTotal = valorTotal;
 	}
-	
 
 	public Long getId() {
 		return id;
@@ -68,12 +64,11 @@ public class ProdutoQuantidade {
 		BigDecimal novoTotal = this.valorTotal.add(novoValor);
 		this.valorTotal = novoTotal;
 	}
-	
+
 	public void remover(Integer quantidade) {
 		this.quantidade -= quantidade;
 		BigDecimal novoValor = this.produto.getValor().multiply(BigDecimal.valueOf(quantidade));
 		this.valorTotal = this.valorTotal.subtract(novoValor);
 	}
-	
-	
+
 }

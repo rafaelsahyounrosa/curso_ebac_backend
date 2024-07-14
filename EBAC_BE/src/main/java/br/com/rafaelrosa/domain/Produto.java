@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package br.com.rafaelrosa.domain;
 
 import java.math.BigDecimal;
@@ -10,25 +8,22 @@ import anotacao.Tabela;
 import anotacao.TipoChave;
 import br.com.rafaelrosa.dao.Persistente;
 
-
 @Tabela("TB_PRODUTO")
 public class Produto implements Persistente {
-	
+
 	@ColunaTabela(dbName = "id", setJavaName = "setId")
 	private Long id;
 
 	@TipoChave("getCodigo")
 	@ColunaTabela(dbName = "codigo", setJavaName = "setCodigo")
 	private String codigo;
-	
+
 	@ColunaTabela(dbName = "nome", setJavaName = "setNome")
 	private String nome;
-	
+
 	@ColunaTabela(dbName = "descricao", setJavaName = "setDescricao")
 	private String descricao;
-	@ColunaTabela(dbName = "categoria", setJavaName = "setCategoria")
-	private String categoria;
-	
+
 	@ColunaTabela(dbName = "valor", setJavaName = "setValor")
 	private BigDecimal valor;
 
@@ -72,11 +67,4 @@ public class Produto implements Persistente {
 		this.id = id;
 	}
 
-	public String getCategoria() {
-		return categoria;
-	}
-
-	public void setCategoria(String categoria) {
-		this.categoria = categoria;
-	}
 }

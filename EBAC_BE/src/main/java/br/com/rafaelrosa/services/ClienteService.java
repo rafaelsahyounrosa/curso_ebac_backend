@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package br.com.rafaelrosa.services;
 
 import br.com.rafaelrosa.dao.IClienteDAO;
@@ -10,20 +8,20 @@ import br.com.rafaelrosa.exceptions.MaisDeUmRegistroException;
 import br.com.rafaelrosa.exceptions.TableException;
 import br.com.rafaelrosa.services.generic.GenericService;
 
-
 public class ClienteService extends GenericService<Cliente, Long> implements IClienteService {
-	
-	//private IClienteDAO clienteDAO;
-	
+
+	// private IClienteDAO clienteDAO;
+
 	public ClienteService(IClienteDAO clienteDAO) {
 		super(clienteDAO);
-		//this.clienteDAO = clienteDAO;
+		// this.clienteDAO = clienteDAO;
 	}
 
-//	@Override
-//	public Boolean salvar(Cliente cliente) throws TipoChaveNaoEncontradaException {
-//		return clienteDAO.cadastrar(cliente);
-//	}
+	// @Override
+	// public Boolean salvar(Cliente cliente) throws TipoChaveNaoEncontradaException
+	// {
+	// return clienteDAO.cadastrar(cliente);
+	// }
 
 	@Override
 	public Cliente buscarPorCPF(Long cpf) throws DAOException {
@@ -36,14 +34,14 @@ public class ClienteService extends GenericService<Cliente, Long> implements ICl
 		return null;
 	}
 
-//	@Override
-//	public void excluir(Long cpf) {
-//		clienteDAO.excluir(cpf);
-//	}
-//
-//	@Override
-//	public void alterar(Cliente cliente) throws TipoChaveNaoEncontradaException{
-//		clienteDAO.alterar(cliente);
-//	}
+	// @Override
+	// public void excluir(Long cpf) {
+	// clienteDAO.excluir(cpf);
+	// }
+	//
+	// @Override
+	// public void alterar(Cliente cliente) throws TipoChaveNaoEncontradaException{
+	// clienteDAO.alterar(cliente);
+	// }
 
 }

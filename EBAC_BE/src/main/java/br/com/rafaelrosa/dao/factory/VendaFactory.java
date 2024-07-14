@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package br.com.rafaelrosa.dao.factory;
 
 import java.sql.ResultSet;
@@ -9,7 +7,6 @@ import java.sql.SQLException;
 import br.com.rafaelrosa.domain.Cliente;
 import br.com.rafaelrosa.domain.Venda;
 import br.com.rafaelrosa.domain.Venda.Status;
-
 
 public class VendaFactory {
 

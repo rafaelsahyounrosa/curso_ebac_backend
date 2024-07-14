@@ -1,8 +1,5 @@
-/**
- * 
- */
-package br.com.rafaelrosa.exceptions;
 
+package br.com.rafaelrosa.exceptions;
 
 public class DAOException extends Exception {
 
@@ -10,5 +7,5 @@ public class DAOException extends Exception {
 
 	public DAOException(String msg, Exception ex) {
 		super(msg, ex);
-    }
+	}
 }

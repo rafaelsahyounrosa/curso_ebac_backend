@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package br.com.rafaelrosa.services.generic;
 
 import java.io.Serializable;
@@ -10,15 +8,14 @@ import br.com.rafaelrosa.dao.Persistente;
 import br.com.rafaelrosa.exceptions.DAOException;
 import br.com.rafaelrosa.exceptions.TipoChaveNaoEncontradaException;
 
+public interface IGenericService<T extends Persistente, E extends Serializable> {
 
-public interface IGenericService <T extends Persistente, E extends Serializable> {
-	
-	/**
+    /**
      * Método para cadastrar novos registro no banco de dados
      *
      * @param entity a ser cadastrado
      * @return retorna verdadeiro para cadastrado e falso para não cadastrado
-	 * @throws DAOException 
+     * @throws DAOException
      */
     public Boolean cadastrar(T entity) throws TipoChaveNaoEncontradaException, DAOException;
 
@@ -26,15 +23,15 @@ public interface IGenericService <T extends Persistente, E extends Serializable>
      * Método para excluir um registro do banco de dados
      *
      * @param valor chave única do dado a ser excluído
-     * @throws DAOException 
+     * @throws DAOException
      */
     public void excluir(E valor) throws DAOException;
 
     /**
-     *Método para alterar um registro no bando de dados.
+     * Método para alterar um registro no bando de dados.
      *
      * @param entity a ser atualizado
-     * @throws DAOException 
+     * @throws DAOException
      */
     public void alterar(T entity) throws TipoChaveNaoEncontradaException, DAOException;
 
@@ -43,15 +40,16 @@ public interface IGenericService <T extends Persistente, E extends Serializable>
      *
      * @param valor chave única do dado a ser consultado
      * @return
-     * @throws DAOException 
+     * @throws DAOException
      */
     public T consultar(E valor) throws DAOException;
 
     /**
-     * Método que irá retornar todos os registros do banco de dados de uma determinado dado ou tabela
+     * Método que irá retornar todos os registros do banco de dados de uma
+     * determinado dado ou tabela
      *
      * @return Registros encontrados
-     * @throws DAOException 
+     * @throws DAOException
      */
     public Collection<T> buscarTodos() throws DAOException;
 

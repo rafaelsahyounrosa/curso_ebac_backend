@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package br.com.rafaelrosa.domain;
 
 import java.math.BigDecimal;
@@ -14,45 +12,44 @@ import anotacao.Tabela;
 import anotacao.TipoChave;
 import br.com.rafaelrosa.dao.Persistente;
 
-
 @Tabela("TB_VENDA")
 public class Venda implements Persistente {
-	
+
 	public enum Status {
 		INICIADA, CONCLUIDA, CANCELADA;
 
 		public static Status getByName(String value) {
 			for (Status status : Status.values()) {
-	            if (status.name().equals(value)) {
-	                return status;
-	            }
-	        }
+				if (status.name().equals(value)) {
+					return status;
+				}
+			}
 			return null;
 		}
 	}
-	
+
 	@ColunaTabela(dbName = "id", setJavaName = "setId")
 	private Long id;
 
 	@TipoChave("getCodigo")
 	@ColunaTabela(dbName = "codigo", setJavaName = "setCodigo")
 	private String codigo;
-	
+
 	@ColunaTabela(dbName = "id_cliente_fk", setJavaName = "setIdClienteFk")
 	private Cliente cliente;
-	
-	//@ColunaTabela(dbName = "id", setJavaName = "setId")
+
+	// @ColunaTabela(dbName = "id", setJavaName = "setId")
 	private Set<ProdutoQuantidade> produtos;
-	
+
 	@ColunaTabela(dbName = "valor_total", setJavaName = "setValorTotal")
 	private BigDecimal valorTotal;
-	
+
 	@ColunaTabela(dbName = "data_venda", setJavaName = "setDataVenda")
 	private Instant dataVenda;
-	
+
 	@ColunaTabela(dbName = "status_venda", setJavaName = "setStatus")
 	private Status status;
-	
+
 	public Venda() {
 		produtos = new HashSet<>();
 	}
@@ -79,8 +76,8 @@ public class Venda implements Persistente {
 
 	public void adicionarProduto(Produto produto, Integer quantidade) {
 		validarStatus();
-		Optional<ProdutoQuantidade> op = 
-				produtos.stream().filter(filter -> filter.getProduto().getCodigo().equals(produto.getCodigo())).findAny();
+		Optional<ProdutoQuantidade> op = produtos.stream()
+				.filter(filter -> filter.getProduto().getCodigo().equals(produto.getCodigo())).findAny();
 		if (op.isPresent()) {
 			ProdutoQuantidade produtpQtd = op.get();
 			produtpQtd.adicionar(quantidade);
@@ -99,40 +96,40 @@ public class Venda implements Persistente {
 			throw new UnsupportedOperationException("IMPOSSÍVEL ALTERAR VENDA FINALIZADA");
 		}
 	}
-	
+
 	public void removerProduto(Produto produto, Integer quantidade) {
 		validarStatus();
-		Optional<ProdutoQuantidade> op = 
-				produtos.stream().filter(filter -> filter.getProduto().getCodigo().equals(produto.getCodigo())).findAny();
-		
+		Optional<ProdutoQuantidade> op = produtos.stream()
+				.filter(filter -> filter.getProduto().getCodigo().equals(produto.getCodigo())).findAny();
+
 		if (op.isPresent()) {
 			ProdutoQuantidade produtpQtd = op.get();
-			if (produtpQtd.getQuantidade()>quantidade) {
+			if (produtpQtd.getQuantidade() > quantidade) {
 				produtpQtd.remover(quantidade);
 				recalcularValorTotalVenda();
 			} else {
 				produtos.remove(op.get());
 				recalcularValorTotalVenda();
 			}
-			
+
 		}
 	}
-	
+
 	public void removerTodosProdutos() {
 		validarStatus();
 		produtos.clear();
 		valorTotal = BigDecimal.ZERO;
 	}
-	
+
 	public Integer getQuantidadeTotalProdutos() {
 		// Soma a quantidade getQuantidade() de todos os objetos ProdutoQuantidade
 		int result = produtos.stream()
-		  .reduce(0, (partialCountResult, prod) -> partialCountResult + prod.getQuantidade(), Integer::sum);
+				.reduce(0, (partialCountResult, prod) -> partialCountResult + prod.getQuantidade(), Integer::sum);
 		return result;
 	}
-	
+
 	public void recalcularValorTotalVenda() {
-		//validarStatus();
+		// validarStatus();
 		BigDecimal valorTotal = BigDecimal.ZERO;
 		for (ProdutoQuantidade prod : this.produtos) {
 			valorTotal = valorTotal.add(prod.getValorTotal());
@@ -175,7 +172,5 @@ public class Venda implements Persistente {
 	public void setProdutos(Set<ProdutoQuantidade> produtos) {
 		this.produtos = produtos;
 	}
-	
-	
-	
+
 }

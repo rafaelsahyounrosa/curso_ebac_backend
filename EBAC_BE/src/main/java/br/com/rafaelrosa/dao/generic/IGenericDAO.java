@@ -9,8 +9,12 @@ import br.com.rafaelrosa.exceptions.TipoChaveNaoEncontradaException;
 import java.io.Serializable;
 import java.util.Collection;
 
-
-public interface IGenericDAO <T extends Persistente, E extends Serializable> {
+/**
+ * 
+ *
+ * Interface genérica para métodos de CRUD(Create, Read, Update and Delete)
+ */
+public interface IGenericDAO<T extends Persistente, E extends Serializable> {
 
     /**
      * Método para cadastrar novos registro no banco de dados
@@ -28,7 +32,7 @@ public interface IGenericDAO <T extends Persistente, E extends Serializable> {
     public void excluir(E valor) throws DAOException;
 
     /**
-     *Método para alterar um registro no bando de dados.
+     * Método para alterar um registro no bando de dados.
      *
      * @param entity a ser atualizado
      */
@@ -39,16 +43,17 @@ public interface IGenericDAO <T extends Persistente, E extends Serializable> {
      *
      * @param valor chave única do dado a ser consultado
      * @return
-     * @throws MaisDeUmRegistroException 
-     * @throws TableException 
+     * @throws MaisDeUmRegistroException
+     * @throws TableException
      */
     public T consultar(E valor) throws MaisDeUmRegistroException, TableException, DAOException;
 
     /**
-     * Método que irá retornar todos os registros do banco de dados de uma determinado dado ou tabela
+     * Método que irá retornar todos os registros do banco de dados de uma
+     * determinado dado ou tabela
      *
      * @return Registros encontrados
-     * @throws DAOException 
+     * @throws DAOException
      */
     public Collection<T> buscarTodos() throws DAOException;
 }

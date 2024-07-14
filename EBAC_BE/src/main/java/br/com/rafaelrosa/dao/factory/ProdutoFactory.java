@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package br.com.rafaelrosa.dao.factory;
 
 import java.sql.ResultSet;
@@ -8,10 +6,8 @@ import java.sql.SQLException;
 
 import br.com.rafaelrosa.domain.Produto;
 
-
 public class ProdutoFactory {
 
-	
 	public static Produto convert(ResultSet rs) throws SQLException {
 		Produto prod = new Produto();
 		prod.setId(rs.getLong("ID_PRODUTO"));

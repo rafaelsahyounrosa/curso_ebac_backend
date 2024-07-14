@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package br.com.rafaelrosa.dao.factory;
 
 import java.sql.ResultSet;
@@ -8,7 +6,6 @@ import java.sql.SQLException;
 
 import br.com.rafaelrosa.domain.Produto;
 import br.com.rafaelrosa.domain.ProdutoQuantidade;
-
 
 public class ProdutoQuantidadeFactory {
 

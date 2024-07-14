@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package br.com.rafaelrosa.services.generic;
 
 import java.io.Serializable;
@@ -13,13 +11,12 @@ import br.com.rafaelrosa.exceptions.MaisDeUmRegistroException;
 import br.com.rafaelrosa.exceptions.TableException;
 import br.com.rafaelrosa.exceptions.TipoChaveNaoEncontradaException;
 
+public abstract class GenericService<T extends Persistente, E extends Serializable>
+		implements IGenericService<T, E> {
 
-public abstract class GenericService<T extends Persistente, E extends Serializable> 
-	implements IGenericService<T, E> {
-	
-	protected IGenericDAO<T,E> dao;
-	
-	public GenericService(IGenericDAO<T,E> dao) {
+	protected IGenericDAO<T, E> dao;
+
+	public GenericService(IGenericDAO<T, E> dao) {
 		this.dao = dao;
 	}
 
@@ -44,7 +41,7 @@ public abstract class GenericService<T extends Persistente, E extends Serializab
 			return this.dao.consultar(valor);
 		} catch (MaisDeUmRegistroException | TableException e) {
 			// TODO Auto-generated catch block
-			//TODO levantar um erro genérico
+			// TODO levantar um erro genérico
 			e.printStackTrace();
 		}
 		return null;
