@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="76ae562b-a2a6-4566-9d1f-21c05d4a2998" name="Changes" comment="Base proj 3.2 - parte 2" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Projeto-1_part3" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;rafaelsahyounrosa&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/rafaelsahyounrosa/curso_ebac_backend.git&quot;,
+    &quot;accountId&quot;: &quot;bd444717-aac3-4a30-bc7b-9e4cd1b358f2&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2iWHP0QDumXAMeVN05t42yedOtR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.AllTests.executor": "Run",
+    "JUnit.ClientServiceTest.atualizarCliente.executor": "Run",
+    "JUnit.ClientServiceTest.excluirCliente.executor": "Run",
+    "JUnit.ClientServiceTest.executor": "Run",
+    "JUnit.ClientServiceTest.salvarCliente.executor": "Run",
+    "JUnit.ClientTest.executor": "Run",
+    "JUnit.ClientTest.pesquisarCliente.executor": "Run",
+    "JUnit.ClienteDaoTest.excluirCliente.executor": "Run",
+    "JUnit.ClienteDaoTest.pesquisarCliente.executor": "Run",
+    "JUnit.ClienteDaoTest.salvarCliente.executor": "Run",
+    "JUnit.ContratoServiceTest.executor": "Run",
+    "JUnit.TestMulheresTest.executor": "Coverage",
+    "JUnit.TestMulheresTest.testMulheresArray.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
+    "git-widget-placeholder": "Projeto-1__part3.2",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/rafael.rosa/Documents/temp/personal/Projs/EBAC/curso_ebac_backend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="dao.generics" />
+      <recent name="dao" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.AllTests">
+    <configuration name="AllTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EBAC_BE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.rafaelrosa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.rafaelrosa" />
+      <option name="MAIN_CLASS_NAME" value="br.com.rafaelrosa.AllTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientServiceTest.atualizarCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EBAC_BE" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ClientServiceTest" />
+      <option name="METHOD_NAME" value="atualizarCliente" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientServiceTest.excluirCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EBAC_BE" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ClientServiceTest" />
+      <option name="METHOD_NAME" value="excluirCliente" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClienteDaoTest.excluirCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EBAC_BE" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ClienteDaoTest" />
+      <option name="METHOD_NAME" value="excluirCliente" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClienteDaoTest.salvarCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EBAC_BE" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ClienteDaoTest" />
+      <option name="METHOD_NAME" value="salvarCliente" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ClientServiceTest.excluirCliente" />
+        <item itemvalue="JUnit.ClientServiceTest.atualizarCliente" />
+        <item itemvalue="JUnit.ClienteDaoTest.salvarCliente" />
+        <item itemvalue="JUnit.ClienteDaoTest.excluirCliente" />
+        <item itemvalue="JUnit.AllTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="76ae562b-a2a6-4566-9d1f-21c05d4a2998" name="Changes" comment="" />
+      <created>1719599384869</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719599384869</updated>
+      <workItem from="1719599385924" duration="46570000" />
+      <workItem from="1720469076280" duration="2345000" />
+      <workItem from="1720477498791" duration="1000" />
+      <workItem from="1720545262885" duration="287000" />
+      <workItem from="1720654743298" duration="2892000" />
+    </task>
+    <task id="LOCAL-00001" summary="Exercicio coleções 1">
+      <option name="closed" value="true" />
+      <created>1719602765109</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1719602765109</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Ordenando a lista">
+      <option name="closed" value="true" />
+      <created>1719603090507</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719603090507</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Exercicio MD13">
+      <option name="closed" value="true" />
+      <created>1719766002279</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719766002280</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Proj 1">
+      <option name="closed" value="true" />
+      <created>1719870698482</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719870698482</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Padroes de projeto 1 - exercicio">
+      <option name="closed" value="true" />
+      <created>1719926740257</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719926740257</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Exercicio Generics">
+      <option name="closed" value="true" />
+      <created>1720205974301</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1720205974301</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Exercicio Annotations">
+      <option name="closed" value="true" />
+      <created>1720225064540</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1720225064540</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Exercicio Reflections">
+      <option name="closed" value="true" />
+      <created>1720313760162</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1720313760162</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Exercicio Streams">
+      <option name="closed" value="true" />
+      <created>1720384301021</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1720384301021</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Exercicio Test1">
+      <option name="closed" value="true" />
+      <created>1720389476099</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1720389476099</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Exercicio Test2">
+      <option name="closed" value="true" />
+      <created>1720442541992</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1720442541992</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Proj 2 - equalizer">
+      <option name="closed" value="true" />
+      <created>1720468174925</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1720468174925</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Proj 2 - equalizer 2">
+      <option name="closed" value="true" />
+      <created>1720468284772</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1720468284772</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Proj 2 - equalizer 3">
+      <option name="closed" value="true" />
+      <created>1720468737142</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1720468737142</updated>
+    </task>
+    <task id="LOCAL-00015" summary="pom">
+      <option name="closed" value="true" />
+      <created>1720469184398</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1720469184398</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Base proj 3.2">
+      <option name="closed" value="true" />
+      <created>1720655822584</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1720655822584</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Base proj 3.2 - parte 2">
+      <option name="closed" value="true" />
+      <created>1720656405871</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1720656405871</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Exercicio coleções 1" />
+    <MESSAGE value="Ordenando a lista" />
+    <MESSAGE value="Exercicio MD13" />
+    <MESSAGE value="Proj 1" />
+    <MESSAGE value="Padroes de projeto 1 - exercicio" />
+    <MESSAGE value="Exercicio Generics" />
+    <MESSAGE value="Exercicio Annotations" />
+    <MESSAGE value="Exercicio Reflections" />
+    <MESSAGE value="Exercicio Streams" />
+    <MESSAGE value="Exercicio Test1" />
+    <MESSAGE value="Exercicio Test2" />
+    <MESSAGE value="Proj 2 - equalizer" />
+    <MESSAGE value="Proj 2 - equalizer 2" />
+    <MESSAGE value="Proj 2 - equalizer 3" />
+    <MESSAGE value="pom" />
+    <MESSAGE value="Base proj 3.2" />
+    <MESSAGE value="Base proj 3.2 - parte 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Base proj 3.2 - parte 2" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="model.CarroSimples" memberName="modelo" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/curso_ebac_backend$TestMulheresTest.ic" NAME="TestMulheresTest Coverage Results" MODIFIED="1720389501718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+  </component>
+</project>
