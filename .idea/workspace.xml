@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76ae562b-a2a6-4566-9d1f-21c05d4a2998" name="Changes" comment="Base proj 3.2 - parte 2" />
+    <list default="true" id="76ae562b-a2a6-4566-9d1f-21c05d4a2998" name="Changes" comment="Base proj 3.2 - parte 2">
+      <change beforePath="$PROJECT_DIR$/crud-cidades/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crud-cidades/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud-cidades/src/main/java/br/rafaelrosa/semana1/crudcidades/CrudCidadesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/crud-cidades/src/main/java/br/rafaelrosa/semana1/crudcidades/CrudCidadesApplication.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,12 +36,12 @@
     &quot;assignee&quot;: &quot;rafaelsahyounrosa&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/rafaelsahyounrosa/curso_ebac_backend.git&quot;,
-    &quot;accountId&quot;: &quot;bd444717-aac3-4a30-bc7b-9e4cd1b358f2&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/rafaelsahyounrosa/curso_ebac_backend.git",
+    "accountId": "3646ea66-3bc0-42ee-8e17-ed0b4b0e7d4e"
   }
-}</component>
+}]]></component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -73,9 +76,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "git-widget-placeholder": "Projeto-1__part3.2",
+    "git-widget-placeholder": "Monolit",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/rafael.rosa/Documents/temp/personal/Projs/EBAC/curso_ebac_backend",
+    "last_opened_file_path": "D:/cursos/Java/Fullstack ebac/Backend/curso_ebac_backend/ExemploDeployTomcat/ExemploTomcat",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -190,6 +193,7 @@
       <workItem from="1720477498791" duration="1000" />
       <workItem from="1720545262885" duration="287000" />
       <workItem from="1720654743298" duration="2892000" />
+      <workItem from="1721311954964" duration="46000" />
     </task>
     <task id="LOCAL-00001" summary="Exercicio coleções 1">
       <option name="closed" value="true" />

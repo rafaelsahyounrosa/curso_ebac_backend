@@ -1,0 +1,29 @@
+Complexidade de Tempo:
+A função recursiva pura faz chamadas recursivas até o valor base (1 ou 0) ser atingido. Para calcular o elemento n, ela precisa fazer exatamente n chamadas recursivas, pois cada chamada diminui o valor de
+n em 1 até chegar em 1. Tempo: O(n), onde cada chamada depende da chamada anterior, resultando em n chamadas.
+Complexidade de Espaço:
+O espaço necessário para armazenar o valor em cada chamada da pilha também é proporcional ao número de chamadas recursivas.
+Espaço: O(n), pois são n chamadas recursivas empilhadas na memória, até o retorno final.
+
+
+
+Complexidade de Tempo:
+Na versão otimizada, usamos memoização para armazenar os resultados intermediários dos cálculos. Se o um elemento já foi calculado antes, ele é recuperado diretamente do array, evitando chamadas recursivas adicionais.
+Portanto, para cada valor n, a função precisa apenas calcular o elemento uma vez.
+Tempo: O(n), já que cada valor de elemento entre 1 e n é calculado apenas uma vez.
+Complexidade de Espaço:
+Na versão otimizada, a pilha de execução ainda será utilizada para armazenar as chamadas recursivas, porém as chamadas redundantes são eliminadas.
+Espaço (Pilha de Execução): O(n), porque a recursão ainda é usada para calcular o elemento.
+Espaço (Memoização): O(n), pois armazenamos até n+1 resultados no array de memoização.
+Portanto, a complexidade total de espaço da versão otimizada também é O(n), considerando a pilha de execução e o armazenamento para memoização.
+
+
+
+FInalmente, podemos considerar a versão da proramação dinamica melhor pois apesar da memoização não alterar a complexidade de tempo ou espaço em termos assintóticos,
+ela reduz o número de cálculos repetidos, tornando a função mais eficiente em casos onde o valor de n é consultado repetidamente.
+
+
+
+
+
+
