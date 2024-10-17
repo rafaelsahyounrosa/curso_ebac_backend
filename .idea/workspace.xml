@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76ae562b-a2a6-4566-9d1f-21c05d4a2998" name="Changes" comment="Base proj 3.2 - parte 2">
-      <change beforePath="$PROJECT_DIR$/crud-cidades/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crud-cidades/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud-cidades/src/main/java/br/rafaelrosa/semana1/crudcidades/CrudCidadesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/crud-cidades/src/main/java/br/rafaelrosa/semana1/crudcidades/CrudCidadesApplication.java" afterDir="false" />
+    <list default="true" id="76ae562b-a2a6-4566-9d1f-21c05d4a2998" name="Changes" comment="modulo 2">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Projeto-1_part3" />
+        <entry key="$PROJECT_DIR$" value="Monolit" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,12 +36,37 @@
     &quot;assignee&quot;: &quot;rafaelsahyounrosa&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/rafaelsahyounrosa/curso_ebac_backend.git",
-    "accountId": "3646ea66-3bc0-42ee-8e17-ed0b4b0e7d4e"
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="bonus-modulo2" />
+                    <option name="lastUsedInstant" value="1728497843" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="Monolit" />
+                    <option name="lastUsedInstant" value="1728497842" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/rafaelsahyounrosa/curso_ebac_backend.git&quot;,
+    &quot;accountId&quot;: &quot;3646ea66-3bc0-42ee-8e17-ed0b4b0e7d4e&quot;
   }
-}]]></component>
+}</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -57,44 +82,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JUnit.AllTests.executor": "Run",
-    "JUnit.ClientServiceTest.atualizarCliente.executor": "Run",
-    "JUnit.ClientServiceTest.excluirCliente.executor": "Run",
-    "JUnit.ClientServiceTest.executor": "Run",
-    "JUnit.ClientServiceTest.salvarCliente.executor": "Run",
-    "JUnit.ClientTest.executor": "Run",
-    "JUnit.ClientTest.pesquisarCliente.executor": "Run",
-    "JUnit.ClienteDaoTest.excluirCliente.executor": "Run",
-    "JUnit.ClienteDaoTest.pesquisarCliente.executor": "Run",
-    "JUnit.ClienteDaoTest.salvarCliente.executor": "Run",
-    "JUnit.ContratoServiceTest.executor": "Run",
-    "JUnit.TestMulheresTest.executor": "Coverage",
-    "JUnit.TestMulheresTest.testMulheresArray.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "git-widget-placeholder": "Monolit",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/cursos/Java/Fullstack ebac/Backend/curso_ebac_backend/ExemploDeployTomcat/ExemploTomcat",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "advanced.settings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AllTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClientServiceTest.atualizarCliente.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClientServiceTest.excluirCliente.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClientServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClientServiceTest.salvarCliente.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClientTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClientTest.pesquisarCliente.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClienteDaoTest.excluirCliente.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClienteDaoTest.pesquisarCliente.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClienteDaoTest.salvarCliente.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContratoServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestMulheresTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.TestMulheresTest.testMulheresArray.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit4&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;bonus-modulo2&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/cursos/Java/Fullstack ebac/Backend/curso_ebac_backend/EBAC_BE/src/main/java/bonus&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="dao.generics" />
       <recent name="dao" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\cursos\Java\Fullstack ebac\Backend\curso_ebac_backend\EBAC_BE\src\main\java\bonus" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -122,6 +151,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AllTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EBAC_BE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.rafaelrosa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.rafaelrosa" />
+      <option name="MAIN_CLASS_NAME" value="br.com.rafaelrosa.AllTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientServiceTest.atualizarCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EBAC_BE" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ClientServiceTest" />
+      <option name="METHOD_NAME" value="atualizarCliente" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ClientServiceTest.atualizarCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EBAC_BE" />
       <option name="PACKAGE_NAME" value="" />
@@ -142,11 +196,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ClientServiceTest.excluirCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EBAC_BE" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ClientServiceTest" />
+      <option name="METHOD_NAME" value="excluirCliente" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ClienteDaoTest.excluirCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EBAC_BE" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ClienteDaoTest" />
       <option name="METHOD_NAME" value="excluirCliente" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClienteDaoTest.excluirCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EBAC_BE" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ClienteDaoTest" />
+      <option name="METHOD_NAME" value="excluirCliente" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClienteDaoTest.salvarCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EBAC_BE" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ClienteDaoTest" />
+      <option name="METHOD_NAME" value="salvarCliente" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -175,8 +259,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
       </set>
     </attachedChunks>
   </component>
@@ -194,6 +278,10 @@
       <workItem from="1720545262885" duration="287000" />
       <workItem from="1720654743298" duration="2892000" />
       <workItem from="1721311954964" duration="46000" />
+      <workItem from="1728497774205" duration="779000" />
+      <workItem from="1729127233375" duration="82000" />
+      <workItem from="1729127341213" duration="528000" />
+      <workItem from="1729127887876" duration="13000" />
     </task>
     <task id="LOCAL-00001" summary="Exercicio coleções 1">
       <option name="closed" value="true" />
@@ -331,7 +419,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720656405871</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="modulo 2">
+      <option name="closed" value="true" />
+      <created>1728497959134</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1728497959134</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,7 +451,8 @@
     <MESSAGE value="pom" />
     <MESSAGE value="Base proj 3.2" />
     <MESSAGE value="Base proj 3.2 - parte 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Base proj 3.2 - parte 2" />
+    <MESSAGE value="modulo 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="modulo 2" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

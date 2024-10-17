@@ -1,0 +1,23 @@
+Explique, com suas palavras, por que os seguintes princípios de código limpo são importantes:
+
+1- Usar nomenclatura adequada
+    A nomenclatura adequada ajuda na legibilidade do código durante as chamadas pois conseguimos ter uma ideia do que a função está fazendo.
+    Podemos também implementar isso para nomear as classes, que vai nos ajudar a manter um código mais fácil de fazer a manutenção e menos obscuro.
+
+2- Resolver os problemas na causa raiz
+    Aqui já é uma questão de relação em cadeia. Ao não resolver o problema de um código direto na raiz, provavelmente teremos que voltar nele para resolver o mesmo problema varias vezes
+
+3- Seguir a política do escoteiro
+    Consiste basicamente na proatividade de refatorar aquilo que pode ser melhorado
+
+
+Para cada uma das assinaturas de método abaixo, explique qual o princípio de código limpo que eles estão ferindo:
+
+1- private void somaNumeros(int a, int b, int c, int d, int e, int f)
+    Número excessivo de parametros na chamada do meto
+
+2- private void oPaiTaOn()
+    O nome do metodo não está adequado pois não passa um entendimento de pra que ele serve
+
+3- private double checaSaldoEAtualiza(long userId, double value)
+    Esse fere a parte do "Single Responsability" de um metodo, onde ele precisa fazer apenas uma coisa e muito bem.
