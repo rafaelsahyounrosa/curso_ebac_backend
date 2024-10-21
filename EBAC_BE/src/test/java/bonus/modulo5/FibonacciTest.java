@@ -13,5 +13,17 @@ public class FibonacciTest {
         assertEquals(190392490709135L, Fibonacci.encontraElementoPD(70));
     }
 
+    @Test
+    public void testFibonacciCom0() {
+        assertEquals(0, Fibonacci.encontraElementoPD(0));
+    }
+
+    @Test
+    public void testFibonacciCom1() {
+        assertEquals(1, Fibonacci.encontraElementoPD(1));
+    }
+
+
+
 
 }
