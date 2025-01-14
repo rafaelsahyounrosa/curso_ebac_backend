@@ -9,14 +9,18 @@ import io.swagger.v3.oas.models.info.Contact;
 import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.info.License;
 
+/**
+ * @author Lucas Bomfim
+ *
+ */
 
 @Configuration
 public class OpenAPIConfig {
 
 	@Bean
 	public OpenAPI customOpenAPI(@Value("${application-version}") String appVersion) {
-		return new OpenAPI().info(new Info().title("Serviço de clientes").version(appVersion)
-				.description("Serviço para gerenciamento de clientes").termsOfService("http://swagger.io/terms/")
+		return new OpenAPI().info(new Info().title("Serviço de produtos").version(appVersion)
+				.description("Serviço para gerenciamento de produtos").termsOfService("http://swagger.io/terms/")
 				.license(new License().name("Apache 2.0").url("http://springdoc.org"))
 				.contact(new Contact().name("Rafael Sahyoun Rosa").email("testmail@gmail.com")));
 	}

@@ -5,12 +5,35 @@
       <directory url="file://$PROJECT_DIR$/EBAC_BE/src/main/resources/archetype-resources" includeSubdirectories="true" />
     </excludeFromCompile>
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="EBAC_BE" />
+        <module name="ClienteService" />
+        <module name="ProdutoService" />
+        <module name="ConfigServer" />
+      </profile>
+      <profile name="Annotation profile for ClienteService" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="VendasService" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="EBAC_BE" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ClienteService" options="-parameters" />
+      <module name="ConfigServer" options="-parameters" />
+      <module name="ProdutoService" options="-parameters" />
+      <module name="VendasService" options="-parameters" />
+    </option>
   </component>
 </project>
