@@ -4,30 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76ae562b-a2a6-4566-9d1f-21c05d4a2998" name="Changes" comment="modulo 2">
-      <change afterPath="$PROJECT_DIR$/EBAC_BE/ClienteService/src/main/java/com/rafaelrosa/vendas/domain/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EBAC_BE/ClienteService/src/main/java/com/rafaelrosa/vendas/repository/IClienteRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EBAC_BE/ClienteService/src/main/java/com/rafaelrosa/vendas/resources/ClienteResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EBAC_BE/ClienteService/src/main/java/com/rafaelrosa/vendas/usecase/BuscaCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EBAC_BE/ClienteService/src/main/java/com/rafaelrosa/vendas/usecase/CadastroCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EBAC_BE/ProdutoService/src/main/java/com/rafaelrosa/vendas/config/MongoConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EBAC_BE/ProdutoService/src/main/java/com/rafaelrosa/vendas/config/OpenAPIConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EBAC_BE/ProdutoService/src/main/java/com/rafaelrosa/vendas/config/ValidatorConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EBAC_BE/ProdutoService/src/main/java/com/rafaelrosa/vendas/controller/ProdutoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EBAC_BE/ProdutoService/src/main/java/com/rafaelrosa/vendas/repository/IProdutoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EBAC_BE/ProdutoService/src/main/java/com/rafaelrosa/vendas/usecase/BuscarProduto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="76ae562b-a2a6-4566-9d1f-21c05d4a2998" name="Changes" comment="Base funcional mod 42">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EBAC_BE/ClienteService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EBAC_BE/ClienteService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EBAC_BE/ClienteService/src/main/java/com/rafaelrosa/vendas/ClienteServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/EBAC_BE/ClienteService/src/main/java/com/rafaelrosa/vendas/ClienteServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EBAC_BE/ClienteService/src/main/java/com/rafaelrosa/vendas/config/MongoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/EBAC_BE/ClienteService/src/main/java/com/rafaelrosa/vendas/config/MongoConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EBAC_BE/ClienteService/src/main/java/com/rafaelrosa/vendas/config/OpenAPIConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/EBAC_BE/ClienteService/src/main/java/com/rafaelrosa/vendas/config/OpenAPIConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EBAC_BE/ClienteService/src/main/java/com/rafaelrosa/vendas/config/ValidatorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/EBAC_BE/ClienteService/src/main/java/com/rafaelrosa/vendas/config/ValidatorConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EBAC_BE/ClienteService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/EBAC_BE/ClienteService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EBAC_BE/ConfigServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EBAC_BE/ConfigServer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EBAC_BE/ConfigServer/src/main/java/com/rafaelrosa/vendas/ConfigServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/EBAC_BE/ConfigServer/src/main/java/com/rafaelrosa/vendas/ConfigServerApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EBAC_BE/ProdutoService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EBAC_BE/ProdutoService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBAC_BE/ProdutoService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/EBAC_BE/ProdutoService/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +79,7 @@
   &quot;isMigrated&quot;: true
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -143,7 +125,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
@@ -356,7 +338,7 @@
       <workItem from="1736809168215" duration="1552000" />
       <workItem from="1736810742185" duration="2235000" />
       <workItem from="1736854944127" duration="6379000" />
-      <workItem from="1736871834059" duration="2318000" />
+      <workItem from="1736871834059" duration="3105000" />
     </task>
     <task id="LOCAL-00001" summary="Exercicio coleções 1">
       <option name="closed" value="true" />
@@ -502,7 +484,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728497959134</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Base funcional mod 42">
+      <option name="closed" value="true" />
+      <created>1736874515369</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1736874515369</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,7 +517,8 @@
     <MESSAGE value="Base proj 3.2" />
     <MESSAGE value="Base proj 3.2 - parte 2" />
     <MESSAGE value="modulo 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="modulo 2" />
+    <MESSAGE value="Base funcional mod 42" />
+    <option name="LAST_COMMIT_MESSAGE" value="Base funcional mod 42" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
