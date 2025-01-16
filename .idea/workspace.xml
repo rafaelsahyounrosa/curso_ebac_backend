@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76ae562b-a2a6-4566-9d1f-21c05d4a2998" name="Changes" comment="Base funcional mod 42">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="76ae562b-a2a6-4566-9d1f-21c05d4a2998" name="Changes" comment="Ajuste pom">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EBAC_BE/ClienteService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/EBAC_BE/ClienteService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EBAC_BE/ProdutoService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EBAC_BE/ProdutoService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EBAC_BE/ProdutoService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/EBAC_BE/ProdutoService/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,50 +85,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JUnit.AllTests.executor": "Run",
-    "JUnit.ClientServiceTest.atualizarCliente.executor": "Run",
-    "JUnit.ClientServiceTest.excluirCliente.executor": "Run",
-    "JUnit.ClientServiceTest.executor": "Run",
-    "JUnit.ClientServiceTest.salvarCliente.executor": "Run",
-    "JUnit.ClientTest.executor": "Run",
-    "JUnit.ClientTest.pesquisarCliente.executor": "Run",
-    "JUnit.ClienteDaoTest.excluirCliente.executor": "Run",
-    "JUnit.ClienteDaoTest.pesquisarCliente.executor": "Run",
-    "JUnit.ClienteDaoTest.salvarCliente.executor": "Run",
-    "JUnit.ContratoServiceTest.executor": "Run",
-    "JUnit.TestMulheresTest.executor": "Coverage",
-    "JUnit.TestMulheresTest.testMulheresArray.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "Spring Boot.ClienteServiceApplication.executor": "Run",
-    "Spring Boot.ConfigServerApplication.executor": "Run",
-    "Spring Boot.ProdutoServiceApplication.executor": "Run",
-    "Spring Boot.VendasServiceApplication.executor": "Run",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "git-widget-placeholder": "modulo42",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/cursos/Java/Fullstack ebac/Backend/curso_ebac_backend/EBAC_BE/ProdutoService/src/main/java/com/rafaelrosa/vendas/config",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AllTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClientServiceTest.atualizarCliente.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClientServiceTest.excluirCliente.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClientServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClientServiceTest.salvarCliente.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClientTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClientTest.pesquisarCliente.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClienteDaoTest.excluirCliente.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClienteDaoTest.pesquisarCliente.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClienteDaoTest.salvarCliente.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContratoServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestMulheresTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.TestMulheresTest.testMulheresArray.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ClienteServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ConfigServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ProdutoServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.VendasServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit4&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;modulo42&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/cursos/Java/Fullstack ebac/Backend/curso_ebac_backend/EBAC_BE/ProdutoService/src/main/java/com/rafaelrosa/vendas/config&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.rafaelrosa.vendas.repository" />
@@ -338,7 +334,8 @@
       <workItem from="1736809168215" duration="1552000" />
       <workItem from="1736810742185" duration="2235000" />
       <workItem from="1736854944127" duration="6379000" />
-      <workItem from="1736871834059" duration="3105000" />
+      <workItem from="1736871834059" duration="3780000" />
+      <workItem from="1737026659517" duration="302000" />
     </task>
     <task id="LOCAL-00001" summary="Exercicio coleções 1">
       <option name="closed" value="true" />
@@ -492,7 +489,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736874515369</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Ajuste pom">
+      <option name="closed" value="true" />
+      <created>1736874987573</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1736874987573</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -518,7 +523,8 @@
     <MESSAGE value="Base proj 3.2 - parte 2" />
     <MESSAGE value="modulo 2" />
     <MESSAGE value="Base funcional mod 42" />
-    <option name="LAST_COMMIT_MESSAGE" value="Base funcional mod 42" />
+    <MESSAGE value="Ajuste pom" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajuste pom" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
